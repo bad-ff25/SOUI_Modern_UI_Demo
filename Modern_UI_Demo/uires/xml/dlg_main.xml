@@ -1,0 +1,97 @@
+﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" margin="5,5,5,5"  resizable="1" wndType="appMain"
+appWnd="1"
+>
+	<skin>
+		<ColorRect cornerPercent="0" normal="#21252B" hover="#282C34" pushdown="#BD93F9" disable="#BD93F9" name="skin_side_menu_hide" />
+
+		<ColorRect cornerPercent="0" normal="#21252B" hover="#282C34" pushdown="#BD93F9" disable="#282C34" name="skin_side_menu_option" />
+
+		<ColorRect cornerPercent="0" normal="#21252B" hover="#2C3139" pushdown="#171A1E" disable="#BD93F9" name="special_button" />
+
+		<!--<button name="skin_side_menu_option" cornerPercent="0" colorUp="#21252B" colorDown="#21252B" colorUpHover="#282C34" colorDownHover="#282C34" colorUpPush="#BD93F9" colorDownPush="#BD93F9" />-->
+
+		<button name="_skin.btn.test" cornerPercent="0" colorUp="#21252B" colorDown="#21252B" colorUpHover="#282C34" colorDownHover="#282C34" colorUpPush="#BD93F9" colorDownPush="#BD93F9" />
+	</skin>
+  <root skin="_skin.sys.wnd.bkgnd" cache="1"  width="800" height="600" >
+	<window size="-2, -2" layout="hbox" colorText="#dddddd" colorBkgnd="#21252B">
+			<!--左侧logo + 导航栏-->
+			<window name="side_menu" clipClient="1" size="60, -2" layout="vbox">
+				<window size="-2, 50" drawFocusRect="0" layout="hbox">
+					<img extend_left="10" size="40, 40" layout_gravity="center" skin="hacker_svg" />
+					<text extend_left="10" layout_gravity="center" font="size:15">Make By Prome</text>
+				</window>
+				<window name="side_menu_hide"  skin="skin_side_menu_hide" drawFocusRect="0" size="-2, 50" layout="hbox">
+					<window msgTransparent="1" size="60, -2">
+						<img pos="|0, |0" offset="-0.5,-0.5" size="26, 26" layout_gravity="center" skin="menu_svg"/>
+					</window>
+					<text extend_left="0" layout_gravity="center">Hide</text>
+				</window>
+
+				<!--page切换-->
+				<window name="btn4_1" checked="1" skin="skin_side_menu_option" drawFocusRect="0" size="-2, 50" layout="hbox">
+					<window msgTransparent="1" size="60, -2">
+						<window name="select" visible="1" size="2, -2" colorBkgnd="#FF79C6"></window>
+						<img pos="|0, |0" offset="-0.5,-0.5" size="25, 26" layout_gravity="center" skin="menu_svg"/>
+					</window>
+					<text extend_left="0" layout_gravity="center">Log Analyze</text>
+				</window>
+				<window name="btn4_2"  skin="skin_side_menu_option" drawFocusRect="0" size="-2, 50" layout="hbox">
+					<window msgTransparent="1" size="60, -2">
+						<window name="select" visible="0" size="2, -2" colorBkgnd="#FF79C6"></window>
+						<img pos="|0, |0" offset="-0.5,-0.5" size="25, 26" layout_gravity="center" skin="menu_svg"/>
+					</window>
+					<text extend_left="0" layout_gravity="center">Debugger</text>
+				</window>
+				<window name="btn4_3"  skin="skin_side_menu_option" drawFocusRect="0" size="-2, 50" layout="hbox">
+					<window msgTransparent="1" size="60, -2">
+						<window name="select" visible="0" size="2, -2" colorBkgnd="#FF79C6"></window>
+						<img pos="|0, |0" offset="-0.5,-0.5" size="25, 26" layout_gravity="center" skin="menu_svg"/>
+					</window>
+					<text extend_left="0" layout_gravity="center">Integrity Check</text>
+				</window>
+			</window>
+
+			<!--标题栏 + page内容显示区-->
+			<window size="-1, -2" layout="vbox" weight="1">
+
+				<caption size="-2, 50" colorBkgnd="#21252B" colorText="#dddddd" layout="hbox">
+					<text extend_left="10" layout_gravity="center" font="size:15">Modern UI Demo</text>
+					<!-- 弹簧 -->
+					<window size="0,0" weight="1" visible="0"/>
+
+					<!--最小化,最大化,关闭按钮-->
+					<window name="btn_min" skin="special_button" size="30, 30" layout_gravity="top" margin="4,6,0,0">
+						<img msgTransparent="1" pos="|0, |0" offset="-0.5,-0.5" size="20,20" skin="window_minimize_svg"/>
+					</window>
+					<window name="btn_max" skin="special_button" size="30, 30" layout_gravity="top" margin="4,6,0,0" display="0">
+						<img msgTransparent="1" pos="|0, |0" offset="-0.5,-0.5" size="20, 20" skin="window_maximize_svg"/>
+					</window>
+					<window name="btn_restore" skin="special_button" size="30, 30" layout_gravity="top" margin="4,6,0,0" show="0" display="0" >
+						<img msgTransparent="1" pos="|0, |0" offset="-0.5,-0.5" size="20,20" skin="window_restore_svg"/>
+					</window>
+					<window name="btn_close" skin="skin_side_menu_hide" size="30, 30" layout_gravity="top" margin="4,6,0,0">
+						<img msgTransparent="1" pos="|0, |0" offset="-0.5,-0.5" size="20,20" skin="close_svg"/>
+					</window>
+					<window size="8,0" visible="0"/>
+				</caption>
+
+				<!--内容切换区-->
+				<window size="-2, -2" colorBkgnd="#282C34">
+					<tabctrl hotTrack="1" curSel="0" pos="0,0,-0,-50" layout_gravity="center" name="tab_radio2" tabHeight="0">
+						<page>
+							<include src="layout:PAGE_1"/>
+						</page>
+						<page>
+							<include src="layout:PAGE_2"/>
+						</page>
+						<page>
+							<include src="layout:PAGE_3"/>
+						</page>
+					</tabctrl>
+				</window>
+			</window>
+
+
+		</window>
+  </root>
+</SOUI>

@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FloatAnimator interpolator="Overshoot" tension="1.5" duration="180" valueFrom="60" valueTo="200" repeatCount="0" repeatMode="restart"/>

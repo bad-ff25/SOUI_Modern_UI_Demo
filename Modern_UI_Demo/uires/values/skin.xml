@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<skin>
+<imglist name="hacker_svg" src="svg:hacker_svg" filterLevel="high" />
+<imglist name="menu_svg" src="svg:menu_svg" />
+<imglist name="close_svg" src="svg:close_svg" />
+<imglist name="window_maximize_svg" src="svg:window_maximize_svg" />
+<imglist name="window_restore_svg" src="svg:window_restore_svg" />
+<imglist name="window_minimize_svg" src="svg:window_minimize_svg" />
+</skin>

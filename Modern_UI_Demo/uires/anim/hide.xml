@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FloatAnimator interpolator="Overshoot" tension="1.0" duration="180" valueFrom="200" valueTo="60" repeatCount="0" repeatMode="restart"/>
+
+<!--<set interpolator="Decelerate" shareInterpolator="true" name="ani_hide" fillAfter="true" fillEnable="true">
+	--><!--note: set alpha and scale will result in abnormal refresh--><!--
+	--><!--<alpha interpolator="Linear" duration="500" fromAlpha="1.0" toAlpha="0.5" repeatMode="reverse" repeatCount="1"/>--><!--
+	--><!--<scale duration="500" fromxScale="200" toXScale="60" pivotX="0" repeatMode="reverse" repeatCount="1"/>--><!--
+</set>-->
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+  <scale duration="500" fromYScale="1.0" toYScale="0.5" pivotY="50%" fromxScale="1.0" toXScale="0.5" pivotX="50%" repeatMode="reverse" repeatCount="1"/>
+</set>
+-->
+<!--<set interpolator="Accelerate" shareInterpolator="true">
+  <scale duration="500" fromXScale="1" toXScale="0.1" fromYScale="1" toYScale="0.1"  pivotX="50%" pivotY="50%" />
+</set>-->

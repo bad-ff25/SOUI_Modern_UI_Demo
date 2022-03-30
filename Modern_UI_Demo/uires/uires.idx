@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<resource>
+	<UIDEF>
+		<file name="XML_INIT" path="uidef\init.xml" />
+	</UIDEF>
+	<LAYOUT>
+		<file name="XML_MAINWND" path="xml\dlg_main.xml" />
+		<file name="PAGE_1" path="xml\page_1.xml" />
+		<file name="PAGE_2" path="xml\page_2.xml" />
+		<file name="PAGE_3" path="xml\page_3.xml" />
+	</LAYOUT>
+	<values>
+		<file name="string" path="values\string.xml" />
+		<file name="color" path="values\color.xml" />
+		<file name="skin" path="values\skin.xml" />
+	</values>
+	<IMG />
+	<ICON>
+		<file name="ICON_LOGO" path="image\soui.ico" />
+	</ICON>
+	<SVG>
+		<file name="hacker_svg" path="svg\hacker.svg" />
+		<file name="menu_svg" path="svg\menu.svg" />
+		<file name="window_maximize_svg" path="svg\window_maximize.svg" />
+		<file name="window_minimize_svg" path="svg\window_minimize.svg" />
+		<file name="window_restore_svg" path="svg\window_restore.svg" />
+		<file name="close_svg" path="svg\close.svg" />
+	</SVG>
+	<anim>
+		<file name="hide_xml" path="anim\hide.xml" />
+		<file name="show_xml" path="anim\show.xml" />
+	</anim>
+</resource>
